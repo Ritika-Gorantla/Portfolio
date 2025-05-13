@@ -3,6 +3,7 @@ import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
+import Footer from './components/Footer';
 
 const theme = createTheme({
   palette: {
@@ -164,6 +165,7 @@ function App() {
         <Projects />
         <UIShowcase />
         <Contact />
+        <Footer />
       </Router>
     </ThemeProvider>
   );
