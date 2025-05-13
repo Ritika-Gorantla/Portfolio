@@ -106,10 +106,10 @@ function Projects() {
 
 function UIShowcase() {
   const images = [
-    { src: "/uia.png", alt: "UI Screenshot A" },
-    { src: "/uib.png", alt: "UI Screenshot B" },
-    { src: "/uic.png", alt: "UI Screenshot C" },
-    { src: "/uid.png", alt: "UI Screenshot D" },
+    { src: `${import.meta.env.BASE_URL}uia.png`, alt: "UI Screenshot A" },
+    { src: `${import.meta.env.BASE_URL}uib.png`, alt: "UI Screenshot B" },
+    { src: `${import.meta.env.BASE_URL}uic.png`, alt: "UI Screenshot C" },
+    { src: `${import.meta.env.BASE_URL}uid.png`, alt: "UI Screenshot D" },
   ];
 
   return (
