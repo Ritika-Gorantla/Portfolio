@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -105,7 +105,6 @@ function Projects() {
 }
 
 function UIShowcase() {
-  // Updated image data with new filenames
   const images = [
     { src: "/uia.png", alt: "UI Screenshot A" },
     { src: "/uib.png", alt: "UI Screenshot B" },
@@ -118,7 +117,7 @@ function UIShowcase() {
       <div style={{ maxWidth: 900, margin: '0 auto' }}>
         <h2>Some of the UIs I Developed</h2>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', justifyContent: 'center' }}>
-          {images.map((img, idx) => (
+          {images.map((img) => (
             <div key={img.src} style={{ flex: '1 1 40%', maxWidth: '45%', minWidth: 250, marginBottom: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
               <img
                 src={img.src}
